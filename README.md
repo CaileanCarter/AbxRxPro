@@ -2,8 +2,7 @@
 
 AbxRxPro is a web-page visualisation tool for phenotypic antibiotic resistance using the graphing module <em>Plotly</em>. The plot can be annotated with genotypic data from antibiotic resistance genes identifying programmes like RGI (resistance gene identifier), staramr and amrfinder. The AbxRxPro package comes with a Galaxy workflow for the inputting of genome sequences through these antibiotic resistance genes identifiers. Frequencies for genes across your given isolates are plotted in a seperate tab.
 
-![alt text](https://github.com/CaileanCarter/AbxRxPro/pic/main_plot.png "Main display for AbxRxPro")
- 
+![alt text](https://github.com/CaileanCarter/AbxRxPro/blob/main/pic/main_plot.png "Main display for AbxRxPro")
 
 <br>
 
@@ -39,7 +38,7 @@ U | Undetermined <i>optional</i>
 
 Missing cells will be assigned 'U' (undetermined). 
 
-![alt text](https://github.com/CaileanCarter/AbxRxPro/pic/Pheno_template.png "Excel file layout")
+![alt text](https://github.com/CaileanCarter/AbxRxPro/blob/main/pic/Pheno_template.png "Excel file layout")
 
 
 
