@@ -1,7 +1,7 @@
 import pathlib
 from distutils.core import setup
 
-HERE = pathlib.Path(__file__)
+HERE = pathlib.Path(__file__).parent
 
 README = (HERE / "README.md").read_text()
 
