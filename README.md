@@ -131,7 +131,7 @@ Short flag | Long flag | Argument | Description
 `-A` | `--amrfinder` | folder path | See <i>Input Files</i> for details.
 `-a` | `--antibiotics` | space seperated list | Specify antibiotics to be displayed in plot. Default are those provided in phenotype file.
 `-l` | `--load` | profile name | Load a saved antibiotic resistance profile
-`-c` | `--colours` | space seperated list | Personalise colour scheme with a list of RGB values in order of <br>resistant, intermediate, susceptible and undetermined. Default values:<br>R : (255, 65, 54), <br>I : (255, 144, 14), <br>S : (44, 160, 101), <br>U : (93, 164, 214). <br>Usage: `abxrxpro.py -c (1,2,3) (4,5,6) (7,8,9) (10,11,12)`
+`-c` | `--colours` | space seperated list | Personalise colour scheme with a list of RGB values in order of <br>resistant, intermediate, susceptible and undetermined. Default values:<br>R : (238, 102, 119), <br>I : (204, 187, 68), <br>S : (102, 204, 238), <br>U : (68, 119, 170). <br>Usage: `abxrxpro.py -c (1,2,3) (4,5,6) (7,8,9) (10,11,12)`
 `-d` | `--delete` | profile name | Delete a saved profile
 `-p` | `--profiles` |  | List saved profiles
 `-e` | `--export` |  | Export a saved profile when loading a saved profile or creating a new one. <br>Usage:<br>`abxrxpro.py -l profile_name -e` <br>or <br>`abxrxpro -P file -b profile_name -e`
