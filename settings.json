@@ -1,41 +1,5 @@
 {
-    "profiles": {
-        "demo4": {
-            "Date created": "02/12/2020 13:40",
-            "Antibiotic count": 17,
-            "Number of isolates": 20,
-            "Antibiotics": "Ampicillin, Cefalexin, Cefepime, Cefotaxime, Cefpodoxime...",
-            "Isolates": "GL1, GL2, GL3, GL4, GL5..."
-        },
-        "justpheno": {
-            "Date created": "02/12/2020 16:01",
-            "Antibiotic count": 17,
-            "Number of isolates": 20,
-            "Antibiotics": "Ampicillin, Cefalexin, Cefepime, Cefotaxime, Cefpodoxime...",
-            "Isolates": "GL1, GL2, GL3, GL4, GL5..."
-        },
-        "demo5": {
-            "Date created": "03/12/2020 15:35",
-            "Antibiotic count": 4,
-            "Number of isolates": 20,
-            "Antibiotics": "Ampicillin, Gentamicin, Nitrofurantoin, Trimethoprim...",
-            "Isolates": "GL1, GL2, GL3, GL4, GL5..."
-        },
-        "testsubjects": {
-            "Date created": "04/12/2020 09:37",
-            "Antibiotic count": 5,
-            "Number of isolates": 3,
-            "Antibiotics": "Ampicillin, Cephalexin, Gentamicin, Nitrofurantoin, Rifampicin...",
-            "Isolates": "ST, MT, PA..."
-        },
-        "demo6": {
-            "Date created": "07/12/2020 09:28",
-            "Antibiotic count": 4,
-            "Number of isolates": 20,
-            "Antibiotics": "Ampicillin, Gentamicin, Nitrofurantoin, Trimethoprim...",
-            "Isolates": "GL1, GL2, GL3, GL4, GL5..."
-        }
-    },
+    "profiles": {},
     "antibiotics": {
         "Amikacin": "Aminoglycosides",
         "Amoxicillin": "Penicillins",
