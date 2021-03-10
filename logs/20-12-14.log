@@ -1,0 +1,50 @@
+root - INFO - 14/12/2020 17:31   Starting new log.
+
+User input parameters:
+
+Phenotype file:     C:\Users\carterc\OneDrive - Norwich BioScience Institutes\Python scripts\Antibiotic_data\v2_0\Phenotypic_data.xlsx 
+RGI folder:         None 
+staramr folder:     None
+amrfinder folder:   None
+Antibiotics:        None
+Profile name:       False
+Build?              False
+Export?             False
+
+
+root - INFO - Getting phenotypic data.
+root - INFO - Phenotypic data loaded.
+root - INFO - Isolate IDs identified:  ['GL1', 'GL2', 'GL3', 'GL4', 'GL5', 'GL6', 'GL7', 'GL8', 'GL9', 'GL10', 'GL11', 'GL12', 'GL13', 'GL14', 'GL15', 'GL16', 'GL17', 'GL18', 'GL19', 'GL20']
+root - INFO - Getting antibiotics/classes from settings.
+root - INFO - Retrieved antibiotic classes.
+root - INFO - No genotype files given
+root - INFO - Creating plot annotations.
+root - INFO - Plotting antibiotic resistance profile.
+root - INFO - End. 
+ 
+
+root - INFO - 14/12/2020 17:31   Starting new log.
+
+User input parameters:
+
+Phenotype file:     C:\Users\carterc\OneDrive - Norwich BioScience Institutes\Python scripts\Antibiotic_data\v2_0\Phenotypic_data.xlsx 
+RGI folder:         None 
+staramr folder:     None
+amrfinder folder:   None
+Antibiotics:        None
+Profile name:       False
+Build?              False
+Export?             False
+
+
+root - INFO - Getting phenotypic data.
+root - INFO - Phenotypic data loaded.
+root - INFO - Isolate IDs identified:  ['GL1', 'GL2', 'GL3', 'GL4', 'GL5', 'GL6', 'GL7', 'GL8', 'GL9', 'GL10', 'GL11', 'GL12', 'GL13', 'GL14', 'GL15', 'GL16', 'GL17', 'GL18', 'GL19', 'GL20']
+root - INFO - Getting antibiotics/classes from settings.
+root - INFO - Retrieved antibiotic classes.
+root - INFO - No genotype files given
+root - INFO - Creating plot annotations.
+root - INFO - Plotting antibiotic resistance profile.
+root - INFO - End. 
+ 
+
