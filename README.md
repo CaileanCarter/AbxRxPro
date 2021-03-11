@@ -1,3 +1,4 @@
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/CaileanCarter/AbxRxPro)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/CaileanCarter/AbxRxPro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CaileanCarter/AbxRxPro/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/CaileanCarter/AbxRxPro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CaileanCarter/AbxRxPro/context:python)
 
