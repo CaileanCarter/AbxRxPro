@@ -1,4 +1,5 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/CaileanCarter/AbxRxPro)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/CaileanCarter/AbxRxPro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CaileanCarter/AbxRxPro/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/CaileanCarter/AbxRxPro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CaileanCarter/AbxRxPro/context:python)
 
