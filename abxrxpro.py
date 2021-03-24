@@ -423,14 +423,10 @@ Export?             {self.export}
 
 
     def _output_data(self):
-        if path.exists(rf"{self.relativepath}\data.json"):
-            raise FileExistsError
         with open(rf"{self.relativepath}\data.json", "w") as outputdata:
             json.dump(self.data, outputdata, indent=4)
 
     def _output_genefrequencies(self):
-        if path.exists(rf"{self.relativepath}\genefrequencies.json"):
-            raise FileExistsError
         with open(rf"{self.relativepath}\genefrequencies.json", "w") as output:
             json.dump(self.GeneFrequencies, output, indent=4)
 
