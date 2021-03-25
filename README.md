@@ -1,3 +1,6 @@
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/CaileanCarter/AbxRxPro)
+![GitHub](https://img.shields.io/github/license/CaileanCarter/AbxRxPro)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/CaileanCarter/AbxRxPro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CaileanCarter/AbxRxPro/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/CaileanCarter/AbxRxPro.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/CaileanCarter/AbxRxPro/context:python)
 
@@ -5,7 +8,7 @@
 
 AbxRxPro is a web-page visualisation tool for phenotypic antibiotic resistance using the graphing module <em>Plotly</em>. The plot can be annotated with genotypic data from antibiotic resistance genes identifying programmes like RGI (resistance gene identifier), staramr and amrfinder. The AbxRxPro package comes with a Galaxy workflow for the inputting of genome sequences through these antibiotic resistance genes identifiers. Frequencies for genes across your given isolates are plotted in a seperate tab.
 
-<img src="https://github.com/CaileanCarter/AbxRxPro/pic/main_plot.jpg"
+<img src="https://github.com/CaileanCarter/AbxRxPro/tree/main/pic/main_plot.jpg"
      alt="Main display"
      style="float: left; margin-right: 10px;"/>
 
@@ -43,7 +46,7 @@ U | Undetermined <i>optional</i>
 
 Missing cells will be assigned 'U' (undetermined). 
 
-<img src="https://github.com/CaileanCarter/AbxRxPro/pic/Pheno_template.jpg"
+<img src="https://github.com/CaileanCarter/AbxRxPro/tree/main/pic/Pheno_template.jpg"
      alt="Phenotypic Excel file"
      style="float: left; margin-right: 10px;"/>
 
