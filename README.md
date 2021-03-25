@@ -50,9 +50,8 @@ Missing cells will be assigned 'U' (undetermined).
      alt="Phenotypic Excel file"
      style="float: left; margin-right: 10px;"/>
 
-
-
 <br> <br>
+
 To create a new profile, you will need to specify the phenotypic file using the `-P` flag:
 ```
 abxrxpro -P path\to\pheno\phenotypic_data.xlsx
