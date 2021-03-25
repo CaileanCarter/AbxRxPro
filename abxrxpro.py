@@ -3,7 +3,7 @@
 """
 AbxRxPro: Antibiotic Resistance Profiler
 
-Version:                    2.0.1-alpha
+Version:                    2.1.1-alpha
 Last modified:              25/03/2021
 Github:                     https://github.com/CaileanCarter/AbxRxPro
 Author:                     Cailean Carter
