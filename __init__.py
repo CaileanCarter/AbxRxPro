@@ -1,3 +1,3 @@
 # __init__.py
 
-__version__ = "2.0.1-alpha"
+__version__ = "2.1.1-alpha"

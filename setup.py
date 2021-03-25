@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="abxrxpro",
-    version="2.0.1",
+    version="2.1.1",
     description="Visualise your isolate's antibiotic resistance profile",
     long_description=README,
     long_description_content_type="text/markdown",
