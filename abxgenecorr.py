@@ -1,10 +1,28 @@
+"""
+AbxRxPro: Antibiotic Resistance Profiler
+
+Version:                    2.0.1-alpha
+Last modified:              25/03/2021
+Github:                     https://github.com/CaileanCarter/AbxRxPro
+Author:                     Cailean Carter
+Email:                      cailean.carter@quadram.ac.uk
+Institute affiliation:      Quadram Institute, Norwich Research Park
+
+
+AbxRxPro is a tool for the visualisation of phenotypic antibiotic resistance as a bubble plot.
+It allows for the inclusion of genotypic data from major antibiotic resistance genotype identifying programmes
+like RGI (resistance gene identifier), staramr and amrfinder. Gene frequencies are also plotted alongside.
+Plots can be saved as profiles which can be loaded directly. Plots can also be exported as an interactive
+HTML file. Plots include text overlay and user-defined colour scheme for the plot.
+
+Plotting is done with Plotly and the plot will be displayed in your browser.
+
+For help, run AbxRxPro without any arguments or the -h or --help flag.
+Alternatively, check out the AbxRxPro documentation.
+"""
+
 import pandas as pd 
 import json
-
-data = json.load(open("data.json"))
-
-class_antibiotic = json.load(open("settings.json"))["antibiotics"]
-
 
 
 class abxcorr:
@@ -12,6 +30,7 @@ class abxcorr:
     def __init__(self, data, pheno):
         self.data = data
         self.phen = pheno.replace({"R" : 1, "S" : 0, "U" : 0, "I" : 0.5})
+        self.class_antibiotic = json.load(open("settings.json"))["antibiotics"]
 
 
     def __call__(self):
@@ -49,11 +68,11 @@ class abxcorr:
 
 
     def get_abx(self, gene, antibiotic):
-        cl = True if antibiotic in class_antibiotic.values() else False
+        cl = True if antibiotic in self.class_antibiotic.values() else False
 
         if cl:
             antibiotics = []
-            for abx, x in class_antibiotic.items():
+            for abx, x in self.class_antibiotic.items():
                 if x == antibiotic and abx in self.phen.columns:
                     antibiotics.append(abx)
             return antibiotics
@@ -63,7 +82,7 @@ class abxcorr:
 
 
     def fetch_results(self, antibiotic, gene):
-        result = {sample : 0 for sample in data.keys()}
+        result = {sample : 0 for sample in self.data.keys()}
         for sample, values in self.data.items():
             if antibiotic in values.keys() and gene in values[antibiotic]:
                 result[sample] += 1

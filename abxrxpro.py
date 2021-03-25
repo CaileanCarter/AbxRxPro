@@ -4,7 +4,7 @@
 AbxRxPro: Antibiotic Resistance Profiler
 
 Version:                    2.0.1-alpha
-Last modified:              04/12/2020
+Last modified:              25/03/2021
 Github:                     https://github.com/CaileanCarter/AbxRxPro
 Author:                     Cailean Carter
 Email:                      cailean.carter@quadram.ac.uk
@@ -27,16 +27,15 @@ import argparse
 import glob
 import json
 import logging
-# import re
-
-from itertools import product
 from datetime import datetime
+from itertools import product
 from os import path, remove
 
+import pandas as pd
 import plotly.graph_objects as go
 import plotly.io as pio
-import pandas as pd
 
+from abxgenecorr import abxcorr
 
 relativepath = path.dirname(path.abspath(__file__))
 
@@ -158,7 +157,7 @@ class DataHandler:
         self.data = {}
 
 
-    def __call__(self, pheno=None, RGI=None, staramr=None, amrfinder=None, colours=None, dev_1=False, dev_2=False):
+    def __call__(self, pheno=None, RGI=None, staramr=None, amrfinder=None, colours=None, dev_1=False, dev_2=False, corr=False):
 
         logging.info(
 f"""{date.strftime("%d/%m/%Y %H:%M")}   Starting new log.
@@ -227,6 +226,12 @@ Export?             {self.export}
         if dev_2:
             logging.warning("Exporting self.GeneFrequencies; this is a development tool")
             self._output_genefrequencies()
+
+        
+        if corr:
+            p = pd.read_excel(pheno, index_col=0)
+            a = abxcorr(self.data, p)
+
 
         logging.info("Creating plot annotations.")
         self.make_annotations()
@@ -736,7 +741,7 @@ parser.add_argument('--hide', action="store_true", default=False, help="Do not s
 parser.add_argument('-D1', action="store_true", default=False, help=argparse.SUPPRESS)         # Exports the main data container self.data (dev tool)
 parser.add_argument('-D2', action="store_true", default=False, help=argparse.SUPPRESS)         # Exports the gene frequency container self.GeneFrequencies (dev tool)
 parser.add_argument('--find_log', action="store_true", default=False, help="Move log file to Downloads folder to be submitted as part of a bug report")
-
+parser.add_argument('-c', '--corr', action="store_true", default=False, help="Show correlation between gene presence and phenotypic resistance.")
 
 group1 = parser.add_mutually_exclusive_group()
 # only builds the profile and does not plot
@@ -809,7 +814,8 @@ else: # if plotting a new profile
         args.amrfinder, 
         colours=args.colours,
         dev_1 = args.D1,
-        dev_2 = args.D2)
+        dev_2 = args.D2,
+        corr=args.corr)
 
     ShowProfile.plot()
 

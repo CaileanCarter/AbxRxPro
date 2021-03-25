@@ -143,6 +143,7 @@ Short flag | Long flag | Argument | Description
  `-b` | `--build` | profile name | Create and save an antibiotic resistance profile without plotting. 
  `-n` | `--new` | profile name | Create, save and plot a new antibiotic resistance profile.
 &nbsp; | `--find_log` |  | Identify where log files are being stored so can be sent as part of a bug report.
+`-c` | `--corr` | | Print gene correlation to phenotypic resistance.
  
 
 
